@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .wrap {
+            background: url(./forest.jpg) no-repeat center center/cover;
+            overflow-x: hidden;
+        }
+
+        .d-flex {
+            height: 5000px;
+            /* background: #000; */
+        }
+
+
+
+        /* 濾鏡 */
+        .grayscale {
+            backdrop-filter: grayscale(1)
+        }
+
+        .brightness {
+            backdrop-filter: brightness(1.5)
+        }
+
+        .blur {
+            backdrop-filter: blur(5px)
+        }
+
+        .contrast {
+            backdrop-filter: contrast(0.8)
+        }
+
+        .invert {
+            backdrop-filter: invert(0.7)
+        }
+
+        .opacity {
+            backdrop-filter: opacity(0.4)
+        }
+
+        .sepia {
+            backdrop-filter: sepia(0.4)
+        }
+
+        .saturate {
+            backdrop-filter: saturate(1.8)
+        }
+
+        .hue-rotate {
+            backdrop-filter: hue-rotate(120deg)
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap h-100 w-100">
+        <div class="container-fluid">
+            <div class="d-flex flex-column text-center w-100 ">
+                <!-- <div class="col border w-75 align-self-center flex-1">backdrop-filter: hue-rotate(120deg)</div> -->
+                <div class="col border w-75 align-self-center flex-1 position-relative">
+                    <p class="position-absolute top-50 start-50 translate-middle h1 p-2">Backdrop-filter<br>效果</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative z1atz">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter: none</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative grayscale">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        grayscale(1)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative brightness">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        brightness(1.5)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative blur">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter: blur(5px)
+                    </p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative contrast">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        contrast(0.8)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative invert">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        invert(0.7)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative opacity">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        opacity(0.4)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative sepia">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        sepia(0.4)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative saturate">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        saturate(1.8)</p>
+                </div>
+                <div class="col border w-75 align-self-center flex-1 position-relative hue-rotate rounded-end">
+                    <p class="position-absolute top-50 start-50 translate-middle h3 p-2">backdrop-filter:
+                        hue-rotate(120deg)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
